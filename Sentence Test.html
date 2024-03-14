@@ -1,0 +1,79 @@
+<HTML>
+<Head><title>Sentence Test</title>
+</Head>
+<body>
+<h1>Sentence test</h1>
+
+<p></p>
+<h2>Page 1</h2>
+<p></p>
+<h3>Click on the play button and type what you hear in the box bellow. Click on the check button to find out if you got it right. The sentence will begin with the question number, don't put this in the answer box. Only use words in your answers.</h3>
+<p></p>
+<h3>Question 1</h3>
+	<audio controls>
+  
+		<source src="ttsmaker-file-2024-3-11-19-29-1-00.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<br></br>
+	
+	<input id="text_a1" type="text" size=40px/>
+	<p id="answer1"></p>
+	<button onclick="myFunction1()" >Check</button>
+	<script>
+	function myFunction1()
+{
+var a=document.getElementById("text_a1").value;
+
+if (a=="the big chicken loves to sing")
+  {
+document.getElementById("answer1").innerText="Correct!";
+  }
+else if (a=="The big chicken loves to sing")
+  {
+document.getElementById("answer1").innerText="Correct!";
+  }
+else
+  {
+document.getElementById("answer1").innerHTML="Oops!";
+  }
+}
+  </script>
+  <p><h3>Question 2:</h3></p>
+  
+  	<audio controls>
+  
+		<source src="ttsmaker-file-2024-3-11-19-29-1-01.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<br></br>
+	
+	<input id="text_a2" type="text" size=40px/>
+	<p id="answer2"></p>
+	<button onclick="myFunction2()">Check</button>
+	<script>
+	function myFunction2()
+{
+var a=document.getElementById("text_a2").value;
+
+if (a=="the town has three supermarkets")
+  {
+document.getElementById("answer2").innerText="Correct!";
+  }
+else if (a=="The town has three supermarkets")
+  {
+document.getElementById("answe2").innerText="Correct!";
+  }
+else
+  {
+document.getElementById("answer2").innerHTML="Oops!";
+  }
+}
+  </script>
+
+	<p></p>
+	
+<input type="button" onclick="location.href='https://google.com';" value="Last Page" /><input type="button" onclick="location.href='https://google.com';" value="Next Page" />
+	
+</body>
+</Html>
